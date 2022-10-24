@@ -1,0 +1,97 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="vivid" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2022-10-24T07:56:21.925932"><meta name="build-number" content="4">    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P98');</script>
+<!-- End Google Tag Manager -->     <title>Inline formatting | Plugin-developers</title><script id="virtual-toc-data" type="application/json">[{"id":"control","level":0,"title":"control","anchor":"#control"},{"id":"emphasis","level":0,"title":"emphasis","anchor":"#emphasis"},{"id":"ui-path","level":0,"title":"ui-path","anchor":"#ui-path"},{"id":"path","level":0,"title":"path","anchor":"#path"},{"id":"shortcut","level":0,"title":"shortcut","anchor":"#shortcut"},{"id":"format","level":0,"title":"format","anchor":"#format"}]</script>   <link href="https://resources.jetbrains.com/storage/help-app/v5/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content="sample-image.png"><!-- Open Graph --><meta property="og:title" content="Inline formatting | Plugin-developers"/><meta property="og:description" content=""/><meta property="og:image" content="sample-image.png"/><meta property="og:site_name" content="Plugin-developers Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="http://www.jetbrains.com/idea//plugin-developers/main/inline-formatting.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Inline formatting | Plugin-developers"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content="sample-image.png"><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "http://www.jetbrains.com/idea//plugin-developers/main/inline-formatting.html#webpage", "url": "http://www.jetbrains.com/idea//plugin-developers/main/inline-formatting.html", "name": "Inline formatting | Plugin-developers", "description": "", "image": "sample-image.png", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "http://www.jetbrains.com/idea/plugin-developers/#website", "url": "http://www.jetbrains.com/idea/plugin-developers/", "name": "Plugin-developers Help" }</script><!-- End Schema.org --></head>    <body data-id="Inline_formatting" data-main-title="Inline formatting" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="null|Markup Reference///Semantic-Markup.topic|Semantic Markup"  >  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P98"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Plugin-developers main Help</h3><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><select class="select _shortcuts" height="1" id="switch-shortcuts">   <option data-group="secondary" value="secondary_macos"  selected > macOS </option>    <option data-group="primary" value="primary_windows"  selected > Windows </option>   </select></div><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Inline_formatting" id="Inline_formatting.topic"  >Inline formatting</h1><p id="d3a8286a_2" >In Plugin-developers you can format the text elements by indicating the text style (<code class="code " id="d3a8286a_3"  >format</code>) or meaning (<code class="code " id="d3a8286a_4"  >control</code>, <code class="code " id="d3a8286a_5"  >ui-path</code>, <code class="code " id="d3a8286a_6"  >path</code>, <code class="code " id="d3a8286a_7"  >shortcut</code>).</p><section class="chapter"  ><h2 id="control" data-toc="control"  >control</h2><p id="d3a8286a_8" >Use the <code class="code " id="d3a8286a_9"  >control</code> tag to refer to UI elements such as buttons, dialogs, checkboxes, and so on.</p><div class="table-wrapper" ><table class=" wide" id="d3a8286a_10"  ><thead><tr class=" ijRowHead" id="d3a8286a_11" ><th id="d3a8286a_12"    ><p>Markup</p></th><th id="d3a8286a_13"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_14" ><td id="d3a8286a_15"    ><div class="code-block" data-lang="markup"         >
+                        
+                        &lt;p&gt;
+                            If the Welcome screen opens, click
+                            &lt;control&gt;
+                                Check out from Version Control
+                            &lt;/control&gt;,
+                            then select &lt;control&gt;Git&lt;/control&gt;.
+                        &lt;/p&gt;
+                        
+                    </div></td><td id="d3a8286a_17"    ><p id="d3a8286a_18" >If the Welcome screen opens, click <span class="control" id="d3a8286a_19" >Check out from Version Control</span>, then select <span class="control" id="d3a8286a_20" >Git</span>.</p></td></tr></tbody ></table ></div></section><section class="chapter"  ><h2 id="emphasis" data-toc="emphasis"  >emphasis</h2><p id="d3a8286a_21" >Use the <code class="code " id="d3a8286a_22"  >emphasis</code> tag when introducing new terms or to draw the user's attention to some words or phrases.</p><div class="table-wrapper" ><table class=" wide" id="d3a8286a_23"  ><thead><tr class=" ijRowHead" id="d3a8286a_24" ><th id="d3a8286a_25"    ><p>Markup</p></th><th id="d3a8286a_26"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_27" ><td id="d3a8286a_28"    ><div class="code-block" data-lang="markup"         >
+                        
+                        &lt;p&gt;
+                            A Writerside
+                            &lt;emphasis&gt;project&lt;/emphasis&gt;
+                            consists of a set of documentation topics
+                            and configuration files that define the
+                            project and preview settings, glossaries,
+                            and the documentation structure.
+                        &lt;/p&gt;
+                        
+                    </div></td><td id="d3a8286a_30"    ><p id="d3a8286a_31" >A Writerside <span class="emphasis" id="d3a8286a_32" >project</span> consists of a set of documentation topics and configuration files that define the project and preview settings, glossaries, and the documentation structure.</p></td></tr></tbody ></table ></div></section><section class="chapter"  ><h2 id="ui-path" data-toc="ui-path"  >ui-path</h2><p id="d3a8286a_33" >Use the <code class="code " id="d3a8286a_34"  >ui-path</code> tag to specify a path to a menu option.</p><div class="table-wrapper" ><table class=" wide" id="d3a8286a_35"  ><thead><tr class=" ijRowHead" id="d3a8286a_36" ><th id="d3a8286a_37"    ><p>Markup</p></th><th id="d3a8286a_38"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_39" ><td id="d3a8286a_40"    ><div class="code-block" data-lang="markup"         >
+                        
+                        
+                        Go to &lt;ui-path&gt;Settings/Preferences | Tools | Writerside&lt;/ui-path&gt;.
+                        
+                        
+                    </div></td><td id="d3a8286a_42"    ><p>Go to <span class="menupath " id="d3a8286a_43"  >Settings/Preferences | Tools | Writerside</span>.</p></td></tr></tbody ></table ></div></section><section class="chapter"  ><h2 id="path" data-toc="path"  >path</h2><p id="d3a8286a_44" >Use the <code class="code " id="d3a8286a_45"  >path</code> tag for paths to directories and files on your computer or file extensions.</p><div class="table-wrapper" ><table class=" wide" id="d3a8286a_46"  ><thead><tr class=" ijRowHead" id="d3a8286a_47" ><th id="d3a8286a_48"    ><p>Markup</p></th><th id="d3a8286a_49"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_50" ><td id="d3a8286a_51"    ><div class="code-block" data-lang="markup"         >
+                        
+                        
+                        The list of categories is stored
+                        in the &lt;path&gt;c.list&lt;/path&gt; file
+                        within the module directory.
+                        
+                        
+                    </div></td><td id="d3a8286a_53"    ><p>The list of categories is stored in the <span class="filepath" id="d3a8286a_54" >c.list</span> file within the module directory.</p></td></tr><tr class="" id="d3a8286a_55" ><td id="d3a8286a_56"    ><div class="code-block" data-lang="markup"         >
+                        
+                        The TOC is stored in the product's
+                        &lt;path&gt;.tree&lt;/path&gt; file.
+                        
+                    </div></td><td id="d3a8286a_58"    ><p>The TOC is stored in the product's <span class="filepath" id="d3a8286a_59" >.tree</span> file.</p></td></tr></tbody ></table ></div></section><section class="chapter"  ><h2 id="shortcut" data-toc="shortcut"  >shortcut</h2><p id="d3a8286a_60" >Use the <code class="code " id="d3a8286a_61"  >control</code> tag to specify a keyboard shortcut. You can reference the shortcuts by key or specify them directly.</p><section class="procedure-steps"   ><h3 id="d3a8286a_62" data-toc="d3a8286a_62">Use shortcuts from the configuration file</h3 ><ol class="list _decimal"><li class="list__item" id="d3a8286a_63" ><p>Place <span class="filepath" id="d3a8286a_64" >keymap.xml</span> with the following structure in the project root. </p><div class="code-block" data-lang="markup"         >
+                    
+                &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+                &lt;Keymap id=&quot;instance_id&quot;&gt;
+                    &lt;Action id=&quot;$Copy&quot;&gt;
+                        &lt;Description&gt;Copy&lt;/Description&gt;
+                        &lt;Shortcut layout=&quot;primary_Windows&quot;&gt;Ctrl+C&lt;/Shortcut&gt;
+                        &lt;Shortcut layout=&quot;primary_macOS&quot;&gt;Meta+C&lt;/Shortcut&gt;
+                    &lt;/Action&gt;
+                &lt;/Keymap&gt;
+                
+                </div></li><li class="list__item" id="d3a8286a_66" ><p id="d3a8286a_67" >Place the <span class="filepath" id="d3a8286a_68" >platforms.xml</span> file in the <span class="filepath" id="d3a8286a_69" >/cfg</span> directory.</p><p id="d3a8286a_70" >In the <code class="code " id="d3a8286a_71"  >id</code> attribute of the <code class="code " id="d3a8286a_72"  >platform</code> element specify <code class="code " id="d3a8286a_73"  >primary</code> or <code class="code " id="d3a8286a_74"  >secondary</code>.</p><p id="d3a8286a_75" >In the <code class="code " id="d3a8286a_76"  >use-keymaps</code> element specify which keymaps can user select from in the picker on top of the page. All values should start with either <code class="code " id="d3a8286a_77"  >primary_</code> or <code class="code " id="d3a8286a_78"  >secondary_</code> prefix. The prefix won't be displayed to a user.</p><p id="d3a8286a_79" >In the <code class="code " id="d3a8286a_80"  >src</code> tag specify the keymap file name.</p><div class="code-block" data-lang="markup"         >
+                    
+                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+                    &lt;platforms&gt;
+                        &lt;platform id=&quot;primary&quot;&gt;
+                            &lt;use-keymaps&gt;
+                                primary_Windows
+                            &lt;/use-keymaps&gt;
+                            &lt;use-keymaps&gt;
+                                primary_macOS
+                            &lt;/use-keymaps&gt;
+                            &lt;src&gt;keymap.xml&lt;/src&gt;
+                        &lt;/platform&gt;
+                    &lt;/platforms&gt;
+                
+                </div></li></ol></section><div class="table-wrapper" ><table class=" wide" id="d3a8286a_82"  ><thead><tr class=" ijRowHead" id="d3a8286a_83" ><th id="d3a8286a_84"    ><p>Markup</p></th><th id="d3a8286a_85"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_86" ><td id="d3a8286a_87"    ><div class="code-block" data-lang="markup"         >
+                        
+                        &lt;shortcut&gt;Ctrl+C&lt;/shortcut&gt;
+                        
+                        
+                    </div></td><td id="d3a8286a_89"    ><p>Use <kbd data-bypass="true" class="keystroke" id="d3a8286a_90" ><span class="keystroke__value">Ctrl+C</span></kbd> to copy the file.</p></td></tr><tr class="" id="d3a8286a_91" ><td id="d3a8286a_92"    ><div class="code-block" data-lang="markup"         >
+                        
+                        &lt;shortcut key=&quot;$Copy&quot;/&gt;
+                        
+                        
+                    </div></td><td id="d3a8286a_94"    ><p>Use <kbd  data-secondary_macos="⌘ C" data-primary_windows="Ctrl+C" id="d3a8286a_95" >Ctrl+C</kbd> to copy the file.</p></td></tr></tbody ></table ></div></section><section class="chapter"  ><h2 id="format" data-toc="format"  >format</h2><p id="d3a8286a_96" >Use a <code class="code " id="d3a8286a_97"  >format</code> tag to specify the text's visual appearance, like style or color.</p><p id="d3a8286a_98" >It has the following attributes:</p><dl id="d3a8286a_99"  data-style="title-top"  ><dt id="d3a8286a_100"  data-expandable="false" >style</dt><dd><p id="d3a8286a_101" ><code class="code " id="d3a8286a_102"  >[bold, italic, strikethrough, underline, superscript, subscript]</code> Specify the text style.</p></dd><dt id="d3a8286a_103"  data-expandable="false" >color</dt><dd><p id="d3a8286a_104" >Specify the text color name — start typing the color name and select the suitable one from the list.</p></dd></dl><div class="table-wrapper" ><table class=" wide" id="d3a8286a_105"  ><thead><tr class=" ijRowHead" id="d3a8286a_106" ><th id="d3a8286a_107"    ><p>Markup</p></th><th id="d3a8286a_108"    ><p>Result</p></th></tr></thead><tbody ><tr class="" id="d3a8286a_109" ><td id="d3a8286a_110"    ><div class="code-block" data-lang="markup"         >
+                        
+                        
+                        &lt;format style=&quot;bold&quot; color=&quot;RosyBrown&quot;&gt;Hello, world!&lt;/format&gt;
+                        
+                        
+                    </div></td><td id="d3a8286a_112"    ><p><span id="d3a8286a_113"   class=""><b><font style="color:#bc8f8f">Hello, world!</font></b></span></p></td></tr><tr class="" id="d3a8286a_114" ><td id="d3a8286a_115"    ><div class="code-block" data-lang="markup"         >
+                        
+                        &lt;format style=&quot;subscript&quot; color=&quot;Red&quot;&gt;Hello, world!&lt;/format&gt;
+                        
+                    </div></td><td id="d3a8286a_117"    ><p><span id="d3a8286a_118"   class=""><sub class="subscript"><font style="color:#ff0000">Hello, world!</font></sub></span></p></td></tr></tbody ></table ></div></section><div class="last-modified"> Last modified: 21 October 2022</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="structural-elements.html">Structural elements</a>   <a class="navigation-links__next" href="lists.html">Lists</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/storage/help-app/v5/app.js"></script></body></html>

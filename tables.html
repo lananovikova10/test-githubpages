@@ -1,0 +1,94 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="vivid" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2022-10-24T07:56:20.008287"><meta name="build-number" content="4">    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P98');</script>
+<!-- End Google Tag Manager -->     <title>Tables | Plugin-developers</title><script id="virtual-toc-data" type="application/json">[]</script>   <link href="https://resources.jetbrains.com/storage/help-app/v5/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content="sample-image.png"><!-- Open Graph --><meta property="og:title" content="Tables | Plugin-developers"/><meta property="og:description" content=""/><meta property="og:image" content="sample-image.png"/><meta property="og:site_name" content="Plugin-developers Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="http://www.jetbrains.com/idea//plugin-developers/main/tables.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Tables | Plugin-developers"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content="sample-image.png"><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "http://www.jetbrains.com/idea//plugin-developers/main/tables.html#webpage", "url": "http://www.jetbrains.com/idea//plugin-developers/main/tables.html", "name": "Tables | Plugin-developers", "description": "", "image": "sample-image.png", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "http://www.jetbrains.com/idea/plugin-developers/#website", "url": "http://www.jetbrains.com/idea/plugin-developers/", "name": "Plugin-developers Help" }</script><!-- End Schema.org --></head>    <body data-id="Tables" data-main-title="Tables" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="null|Markup Reference///Semantic-Markup.topic|Semantic Markup"  >  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P98"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Plugin-developers main Help</h3><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><select class="select _shortcuts" height="1" id="switch-shortcuts">   <option data-group="secondary" value="secondary_macos"  selected > macOS </option>    <option data-group="primary" value="primary_windows"  selected > Windows </option>   </select></div><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Tables" id="Tables.topic"  >Tables</h1><p id="51ad2d77_1" >To create the table, use a <code class="code " id="51ad2d77_2"  >table</code> tag. A table consists of <code class="code " id="51ad2d77_3"  >tr</code> elements for rows and <code class="code " id="51ad2d77_4"  >td</code> elements for cells.</p><p id="51ad2d77_5" >The <code class="code " id="51ad2d77_6"  >table</code> has the following attributes:</p><dl id="51ad2d77_7"  data-style="title-top"  ><dt id="51ad2d77_8"  data-expandable="false" >style</dt><dd><p id="51ad2d77_9" ><code class="code " id="51ad2d77_10"  >[header-row|header-column|both|none]</code> Define the table header appearance. The header is an element used to label each column, the text inside it is marked bold.</p><div class="tabs" id="51ad2d77_11"data-group="table"><div class="tabs__content" data-gtm="tab" id="51ad2d77_12" data-sync-tabs="row"  data-title="header-row" ><div class="table-wrapper" ><table class=" wide" id="51ad2d77_13"  ><thead><tr class=" ijRowHead" id="51ad2d77_14" ><th id="51ad2d77_15"    ><p>Heading 1</p></th><th id="51ad2d77_16"    ><p>Heading 2</p></th></tr></thead><tbody ><tr class="" id="51ad2d77_17" ><td id="51ad2d77_18"    ><p>Lorem ipsum dolor sit amet.</p></td><td id="51ad2d77_19"    ><p>Consectetur adipiscing elit.</p></td></tr></tbody ></table ></div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_20" data-sync-tabs="column"  data-title="header-column" ><div class="table-wrapper" ><table class=" left_header wide" id="51ad2d77_21"  ><tbody ><tr class="" id="51ad2d77_22" ><th id="51ad2d77_23"    ><p>Heading 1</p></th><td id="51ad2d77_24"    ><p>Lorem ipsum dolor sit amet.</p></td></tr><tr class="" id="51ad2d77_25" ><th id="51ad2d77_26"    ><p>Heading 2</p></th><td id="51ad2d77_27"    ><p>Consectetur adipiscing elit.</p></td></tr></tbody ></table ></div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_28" data-sync-tabs="both"  data-title="both" ><div class="table-wrapper" ><table class=" left_header wide" id="51ad2d77_29"  ><thead><tr class=" ijRowHead" id="51ad2d77_30" ><th id="51ad2d77_31"    ><p>Heading 1</p></th><th id="51ad2d77_32"    ><p>Lorem ipsum dolor sit amet.</p></th></tr></thead><tbody ><tr class="" id="51ad2d77_33" ><th id="51ad2d77_34"    ><p>Option 1</p></th><td id="51ad2d77_35"    ><p>Consectetur adipiscing elit.</p></td></tr></tbody ></table ></div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_36" data-sync-tabs="none"  data-title="none" ><div class="table-wrapper" ><table class=" no_header wide" id="51ad2d77_37"  ><tbody ><tr class="" id="51ad2d77_38" ><td id="51ad2d77_39"    ><p>Consectetur adipiscing elit.</p></td><td id="51ad2d77_40"    ><p>Lorem ipsum dolor sit amet.</p></td></tr><tr class="" id="51ad2d77_41" ><td id="51ad2d77_42"    ><p>Lorem ipsum dolor sit amet.</p></td><td id="51ad2d77_43"    ><p>Consectetur adipiscing elit.</p></td></tr></tbody ></table ></div></div></div><div class="tabs" id="51ad2d77_44"data-group="table"><div class="tabs__content" data-gtm="tab" id="51ad2d77_45" data-sync-tabs="row"  data-title="header-row" ><div class="code-block" data-lang="markup"    data-title="XML"     >
+                    
+                    &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                                Heading 1
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Heading 2
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                                Lorem ipsum dolor sit amet.
+                            &lt;/td&gt;
+                            &lt;td&gt;
+                                Consectetur adipiscing elit.
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    
+                </div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_47" data-sync-tabs="column"  data-title="header-column" ><div class="code-block" data-lang="markup"    data-title="XML"     >
+                    
+                    &lt;table style=&quot;header-column&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Heading 1
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Lorem ipsum dolor sit amet.
+                        &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Heading 2
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Consectetur adipiscing elit.
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                    
+                </div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_49" data-sync-tabs="both"  data-title="both" ><div class="code-block" data-lang="markup"    data-title="XML"     >
+                    
+                    &lt;table style=&quot;both&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Heading 1
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Lorem ipsum dolor sit amet.
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Option 1
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Consectetur adipiscing elit.
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                    
+                </div></div><div class="tabs__content" data-gtm="tab" id="51ad2d77_51" data-sync-tabs="none"  data-title="none" ><div class="code-block" data-lang="markup"    data-title="XML"     >
+                    
+                    &lt;table style=&quot;none&quot;&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Consectetur adipiscing elit.
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Lorem ipsum dolor sit amet.
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            Lorem ipsum dolor sit amet.
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            Consectetur adipiscing elit.
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                    
+                </div></div></div></dd></dl><p id="51ad2d77_53" >The table cell (<code class="code " id="51ad2d77_54"  >td</code> tag) has the following attributes:</p><dl id="51ad2d77_55"  data-style="title-top"  ><dt id="51ad2d77_56"  data-expandable="false" >colspan</dt><dd><p>Define the number of columns a cell should span.</p></dd><dt id="51ad2d77_57"  data-expandable="false" >rowspan</dt><dd><p>Specify the number of rows a cell should span.</p></dd><dt id="51ad2d77_58"  data-expandable="false" >sorted</dt><dd><p id="51ad2d77_59" ><code class="code " id="51ad2d77_60"  >[asc|none|desc]</code> Sort the column data.</p></dd><dt id="51ad2d77_61"  data-expandable="false" >width</dt><dd><p>Set the column width in pixels or percent.</p></dd></dl><div class="last-modified"> Last modified: 21 October 2022</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="definition-lists.html">Definition lists</a>   <a class="navigation-links__next" href="tabs.html">Tabs</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/storage/help-app/v5/app.js"></script></body></html>

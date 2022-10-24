@@ -1,0 +1,63 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="vivid" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2022-10-24T07:56:20.004484"><meta name="build-number" content="4">    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P98');</script>
+<!-- End Google Tag Manager -->     <title>Conditional content | Plugin-developers</title><script id="virtual-toc-data" type="application/json">[]</script>   <link href="https://resources.jetbrains.com/storage/help-app/v5/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content="sample-image.png"><!-- Open Graph --><meta property="og:title" content="Conditional content | Plugin-developers"/><meta property="og:description" content=""/><meta property="og:image" content="sample-image.png"/><meta property="og:site_name" content="Plugin-developers Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="http://www.jetbrains.com/idea//plugin-developers/main/conditional-content.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Conditional content | Plugin-developers"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content="sample-image.png"><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "http://www.jetbrains.com/idea//plugin-developers/main/conditional-content.html#webpage", "url": "http://www.jetbrains.com/idea//plugin-developers/main/conditional-content.html", "name": "Conditional content | Plugin-developers", "description": "", "image": "sample-image.png", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "http://www.jetbrains.com/idea/plugin-developers/#website", "url": "http://www.jetbrains.com/idea/plugin-developers/", "name": "Plugin-developers Help" }</script><!-- End Schema.org --></head>    <body data-id="Conditional_content" data-main-title="Conditional content" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="Single_sourcing.topic|Single sourcing and content reuse"  >  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P98"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Plugin-developers main Help</h3><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><select class="select _shortcuts" height="1" id="switch-shortcuts">   <option data-group="secondary" value="secondary_macos"  selected > macOS </option>    <option data-group="primary" value="primary_windows"  selected > Windows </option>   </select></div><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Conditional_content" id="Conditional_content.topic"  >Conditional content</h1><p id="8f91495d_1" >Conditional content means you can include or exclude content depending on certain conditions. For example:</p><ul class="list _ul" id="8f91495d_2"    ><li class="list__item" id="8f91495d_3" ><p>Audience level</p></li><li class="list__item" id="8f91495d_4" ><p>Product</p></li><li class="list__item" id="8f91495d_5" ><p>Version</p></li><li class="list__item" id="8f91495d_6" ><p>Platform or operation system</p></li><li class="list__item" id="8f91495d_7" ><p>Output type</p></li></ul><p id="8f91495d_8" >In Writerside, you can use filters to specify whether a specific element, like a paragraph, a code snippet, or a screenshot should or should not be included in a particular version of the documentation. All elements without the <code class="code " id="8f91495d_9"  >filter</code> attribute are included implicitly.</p><section class="procedure-steps"   ><h3 id="filter-by-instance" data-toc="filter-by-instance">Filter by instance</h3 ><ul class="list" ><li class="list__item" id="8f91495d_10" ><p id="8f91495d_11" >If you want to filter the content by the instance, add the <code class="code " id="8f91495d_12"  >instance</code> attribute to the tag and specify the instance IDs where the content should be displayed. To exclude the element from a particular instance help, add <code class="code " id="8f91495d_13"  >!</code> with an instance ID. You can add the <code class="code " id="8f91495d_14"  >if</code> tag to select specific portions of content that do not match tags.</p><div class="code-block" data-lang="markup"         >
+                    
+                    
+                        &lt;p&gt;
+                            Place the caret at the desired symbol and press
+                            &lt;shortcut key=&quot;GoTo&quot;/&gt;.
+                        &lt;/p&gt;
+                        &lt;p product=&quot;ab,cd&quot;&gt;
+                            Alternatively, keeping
+                            &lt;for product=&quot;!ab&quot;&gt;
+                                &lt;shortcut&gt;Ctrl&lt;/shortcut&gt;
+                                (&lt;shortcut&gt;⌘&lt;/shortcut&gt; for macOS)
+                            &lt;/for&gt;
+                            &lt;for product=&quot;cd&quot;&gt;
+                                &lt;shortcut&gt;⌘&lt;/shortcut&gt;
+                            &lt;/for&gt;
+                            pressed, hover your mouse pointer
+                            over the symbol.
+                        &lt;/p&gt;
+                        
+                    
+            </div></li></ul></section><section class="procedure-steps"   ><h3 id="filter-by-content" data-toc="filter-by-content">Filter by custom conditions</h3 ><p id="8f91495d_16" >You can filter the content by other custom conditions.</p><p id="8f91495d_17" >For example, if you have content that is only relevant to macOS users, you could set a filter with the OS name.</p><p id="8f91495d_18" >Then include the content if you are publishing a Mac user guide or exclude it if you are publishing a Windows user guide.</p><ol class="list _decimal"><li class="list__item" id="8f91495d_19" ><p>Add the <code class="code " id="8f91495d_20"  >filter</code> attribute with the value <code class="code " id="8f91495d_21"  >macos</code> to the content elements to filter the whole element. </p><div class="code-block" data-lang="markup"         >
+                        
+                &lt;procedure title=&quot;Setting up&quot; id=&quot;settings&quot;&gt;
+                    &lt;step filter=&quot;macos&quot;&gt;Step one&lt;/step&gt;
+                    &lt;step filter=&quot;win&quot;&gt;Step two&lt;/step&gt;
+                &lt;/procedure&gt;
+                
+            </div></li><li class="list__item" id="8f91495d_23" ><p>Or wrap the content fragment to the <code class="code " id="8f91495d_24"  >if</code> element to filter a part of the content. </p><div class="code-block" data-lang="markup"         >
+                
+                &lt;li&gt;
+                    Start typing to filter results.
+                    &lt;if filter=&quot;mac&quot;&gt;
+                        If necessary, press
+                        &lt;shortcut&gt;⌘+F&lt;/shortcut&gt;
+                        to clear the filtering.
+                    &lt;/if&gt;
+                    &lt;if filter=&quot;win&quot;&gt;
+                        If necessary, press
+                        &lt;shortcut&gt;Ctrl+F&lt;/shortcut&gt;
+                        to clear the filtering.
+                    &lt;/if&gt;
+                &lt;/li&gt;
+                
+            </div></li></ol></section><section class="procedure-steps"   ><h3 id="8f91495d_26" data-toc="8f91495d_26">Filter the content in the included fragment</h3 ><ol class="list _decimal"><li class="list__item" id="8f91495d_27" ><p id="8f91495d_28" >To include only certain parts of the original topic, use the <code class="code " id="8f91495d_29"  >include</code> tag with the <code class="code " id="8f91495d_30"  >use-filter</code> attribute in your topic.</p><div class="code-block" data-lang="markup"         >
+                &lt;include from=&quot;lib_settings.xml&quot; element-id=&quot;prerequisites&quot; use-filter=&quot;macos&quot;&gt;
+                
+            </div></li><li class="list__item" id="8f91495d_32" ><p>Or add the <code class="code " id="8f91495d_33"  >include</code> element to the <span class="filepath" id="8f91495d_34" >.tree</span> file of your product with the <code class="code " id="8f91495d_35"  >use-filter</code> attribute. </p><div class="code-block" data-lang="markup"         > 
+                &lt;include from = &quot;toc_chunks&quot;
+                         target = &quot;settings&quot;
+                         use-filter = &quot;linux&quot;/&gt;
+                
+            </div></li></ol></section><div class="last-modified"> Last modified: 21 October 2022</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="variables.html">Variables</a>   <a class="navigation-links__next" href="local-build.html">Build an instance locally</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/storage/help-app/v5/app.js"></script></body></html>

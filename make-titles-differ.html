@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="vivid" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2022-10-24T07:56:20.98877"><meta name="build-number" content="4">    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5P98');</script>
+<!-- End Google Tag Manager -->     <title>Make titles differ | Plugin-developers</title><script id="virtual-toc-data" type="application/json">[{"id":"bbef1b4e_2","level":0,"title":"Use variables to change the topic title","anchor":"#bbef1b4e_2"},{"id":"bbef1b4e_12","level":0,"title":"Use filters to change the chapter title","anchor":"#bbef1b4e_12"}]</script>   <link href="https://resources.jetbrains.com/storage/help-app/v5/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content="sample-image.png"><!-- Open Graph --><meta property="og:title" content="Make titles differ | Plugin-developers"/><meta property="og:description" content=""/><meta property="og:image" content="sample-image.png"/><meta property="og:site_name" content="Plugin-developers Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="http://www.jetbrains.com/idea//plugin-developers/main/make-titles-differ.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Make titles differ | Plugin-developers"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content="sample-image.png"><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "http://www.jetbrains.com/idea//plugin-developers/main/make-titles-differ.html#webpage", "url": "http://www.jetbrains.com/idea//plugin-developers/main/make-titles-differ.html", "name": "Make titles differ | Plugin-developers", "description": "", "image": "sample-image.png", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "http://www.jetbrains.com/idea/plugin-developers/#website", "url": "http://www.jetbrains.com/idea/plugin-developers/", "name": "Plugin-developers Help" }</script><!-- End Schema.org --></head>    <body data-id="Make_titles_differ" data-main-title="Make titles differ" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="Single_sourcing.topic|Single sourcing and content reuse"  >  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P98"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Plugin-developers main Help</h3><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><select class="select _shortcuts" height="1" id="switch-shortcuts">   <option data-group="secondary" value="secondary_macos"  selected > macOS </option>    <option data-group="primary" value="primary_windows"  selected > Windows </option>   </select></div><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Make_titles_differ" id="Make_titles_differ.topic"  >Make titles differ</h1><p id="bbef1b4e_1" >If you use a topic in several instances help, you can change topic, chapter, and procedures titles depending on the output.</p><section class="chapter"  ><h2 id="bbef1b4e_2" data-toc="bbef1b4e_2"  >Use variables to change the topic title</h2><section class="procedure-steps" id="bbef1b4e_3"  ><ol class="list _decimal"><li class="list__item" id="bbef1b4e_4" ><p id="bbef1b4e_5" >Add a variable in <span class="filepath" id="bbef1b4e_6" >v.list</span> file and specify different values for each instance.</p><div class="code-block" data-lang="markup"         >
+                
+                &lt;var name=&quot;Settings_page_name&quot; instance=&quot;web&quot;
+                     value=&quot;Setting up on the web&quot;/&gt;
+                &lt;var name=&quot;Settings_page_name&quot; instance=&quot;mob&quot;
+                     value=&quot;Setting up on mobile&quot;/&gt;
+                
+                </div></li><li class="list__item" id="bbef1b4e_8" ><p>Use it in the <code class="code " id="bbef1b4e_9"  >title</code> attribute of the <code class="code " id="bbef1b4e_10"  >topic</code> element. </p><div class="code-block" data-lang="markup"         >
+                
+                &lt;topic xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+                   xsi:noNamespaceSchemaLocation=&quot;https://resources.jetbrains.com/stardust/topic.v2.xsd&quot;
+                   id=&quot;Setting_up_web&quot; title=&quot;%Settings_page_name%&quot;&gt;
+                
+                </div></li></ol></section></section><section class="chapter"  ><h2 id="bbef1b4e_12" data-toc="bbef1b4e_12"  >Use filters to change the chapter title</h2><section class="procedure-steps" id="bbef1b4e_13"  ><p id="bbef1b4e_14" >If you reuse a chapter or a procedure, you can adjust its title using filters or the <code class="code " id="bbef1b4e_15"  >instance</code> attribute.</p><ul class="list" ><li class="list__item" id="bbef1b4e_16" ><p id="bbef1b4e_17" >Use the <code class="code " id="bbef1b4e_18"  >instance</code> attribute in the title.</p><div class="code-block" data-lang="markup"         >
+                
+                &lt;snippet id=&quot;some-id&quot;&gt;
+                  &lt;chapter title=&quot;The base title&quot;&gt;
+                    &lt;title instance=&quot;ab&quot;&gt;The custom title&lt;/title&gt;
+                    &lt;p&gt;
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    &lt;/p&gt;
+                &lt;/chapter&gt;
+                &lt;/snippet&gt;
+                
+                </div><p id="bbef1b4e_20" >In this case for all instances the title will be <span class="emphasis" id="bbef1b4e_21" >The base title</span>, while for the <code class="code " id="bbef1b4e_22"  >ab</code> instance — <span class="emphasis" id="bbef1b4e_23" >The custom title</span>.</p></li><li class="list__item" id="bbef1b4e_24" ><p id="bbef1b4e_25" >Use the <code class="code " id="bbef1b4e_26"  >filter</code> attribute in the title.</p><div class="code-block" data-lang="markup"         >
+                
+            &lt;snippet id=&quot;connections_to_dbs&quot;&gt;
+            &lt;procedure&gt;
+            &lt;title filter=&quot;mysql&quot;&gt;
+                Connection to MySQL
+            &lt;/title&gt;
+            &lt;title filter=&quot;postgres&quot;&gt;
+                Connection to PostgreSQL
+            &lt;/title&gt;
+            &lt;/procedure&gt;
+            &lt;/snippet&gt;
+                
+            </div></li></ul></section></section><div class="last-modified"> Last modified: 21 October 2022</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="reuse-a-content-in-another-topic.html">Reuse a content in another topic</a>   <a class="navigation-links__next" href="make-part-of-the-content-differ.html">Make part of the reused content differ</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/storage/help-app/v5/app.js"></script></body></html>
